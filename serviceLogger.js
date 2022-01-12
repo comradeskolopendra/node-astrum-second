@@ -1,10 +1,12 @@
 var EventLogger = require('node-windows').EventLogger;
-var log = new EventLogger('Astrum-Telegram');
+var logMain = new EventLogger('Astrum-Telegram');
+var logThread = new EventLogger('Astrum-Telegram-Logger');
+const fs = require('fs')
 
-log.info('[Started]')
+let writeLogger = fs.createWriteStream(logThread)
+writeLogger.write('[Working-From-Thread]')
 
 while (true) {
-  logger_worker.onmessage = function() {
-      log.info('[Working]')
-  }
+  logMain.info('[Working]')
+  logThread.info('hello')
 }
