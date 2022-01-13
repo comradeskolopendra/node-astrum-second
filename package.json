@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node nodeService.js"
+  },
   "dependencies": {
     "airgram": "^4.2.0",
     "fs": "^0.0.1-security",
@@ -9,6 +12,7 @@
     "tdl": "^7.0.0",
     "tdlib": "^0.0.0-alpha.0",
     "worker": "^0.4.0",
-    "worker-threads": "^1.0.0"
+    "worker-threads": "^1.0.0",
+    "workerpool": "^6.1.5"
   }
 }

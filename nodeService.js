@@ -12,5 +12,6 @@ svc.on('install', function(){
 });
 
 svc.install();
+// svc.uninstall();
 
 console.log('{Code succes!}')
